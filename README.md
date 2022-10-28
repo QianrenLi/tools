@@ -13,7 +13,7 @@ This tool mainly modify the [gui.py](https://github.com/QianrenLi/tools/blob/mas
 pip install keyboard
 ```
 
-1. latexocr
+2. latexocr
 
 [https://github.com/lukas-blecher/LaTeX-OCR](https://github.com/lukas-blecher/LaTeX-OCR)
 
