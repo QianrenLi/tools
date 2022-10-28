@@ -24,5 +24,9 @@ pip install keyboard
 ![image](https://user-images.githubusercontent.com/51881852/198520201-051e1b8e-2797-45e7-937a-4c91e126cb62.png)
 
 
-1. Replace [gui.py](https://github.com/QianrenLi/tools/blob/master/gui_latexocr/gui.py) with given file
-2. Run the result with cmd:
+2. Replace [gui.py](https://github.com/QianrenLi/tools/blob/master/gui_latexocr/gui.py) with given file
+3. Run the result with cmd: 
+```
+python -m pix2tex.__main__ --gui
+```
+or modifying the .bat file to match your environemnt
