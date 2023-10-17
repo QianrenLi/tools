@@ -16,7 +16,7 @@ Sometimes clean repo and reclone it is necessary, i mean especially when you dea
 Although a full virtualization might be a better solution, here a simple alias designed to remove git repo and fast clone is introduced.
 
 ``` bash
-git ls-files -z --ignored --exclude-standard | xargs -0 git rm -r --cached .; git clean -f;rm -rf .git
+git ls-files -z --ignored --exclude-standard | xargs -0 git rm -r --cached .; git clean -f -d; rm -rf .git
 
 x(){ var="$1"; git clone git@github.com:QianrenLi/${var::-1}.git temp ; mv temp/.git "$1".git; rm -rf temp; cd "$1"; git reset --hard; }; x
 ```
