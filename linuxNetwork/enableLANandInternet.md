@@ -17,3 +17,9 @@ This approach, through, suffers from weak connection stability. Therefore, here 
   sudo route del default gw <LAN GATEWAT>
   sudo route add default gw <INTENET GATEWAY> dev <INTENET NIC>
 ```
+
+
+# Enable two same NICs
+The WiFi system generally providing a co-service set on 5G and 2.4G which not interferes with each other. Nevertheless, the linux driver will automatically use one NIC as proxy and thus reduce the channel capacity available. To enable these such connection, we can set the route table rule as done in the `set_route.py`.
+
+In `set_route.py`, a simple example offers to set route for Interfaces in the same subnet (started with `192.168`) is provided.
