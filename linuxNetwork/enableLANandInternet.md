@@ -17,3 +17,10 @@ This approach, through, suffers from weak connection stability. Therefore, here 
   sudo route del default gw <LAN GATEWAT>
   sudo route add default gw <INTENET GATEWAY> dev <INTENET NIC>
 ```
+
+# Enable same subnet multiple connection:
+The linux system automatically will redirect the transmission in the same BSS which might not be helpful, especially when we need to expand the transmission ability with multiple connections.
+
+The implementation procedure mainly contains two parts:
++ First modify the ARP setting `arp_filter` and `arp_ignore` to make the kernel to identify the ip address with specific interface rather than device it self. 
++ Secondly, make sure two interfaces sperated from each other which can be done by creating multiple different route table.
